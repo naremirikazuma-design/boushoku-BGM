@@ -1,0 +1,101 @@
+@charset "utf-8";
+
+/* common */
+body {
+  margin: 0;
+  text-align: center;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+/* header */
+header {
+  /* background: pink; */
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
+  padding: 16px;
+} 
+
+.logo {
+  border-radius: 50%;
+}
+
+.game-link{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+h1 {
+  /* background: gray; */
+  margin: 0;
+}
+
+.unityroom {
+  /* margin: 0; */
+  background: rgb(47, 172, 47);
+  color: white;
+  font-size: 16px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.unityroom:hover {
+  transform: scale(1.05);
+}
+
+main {
+  text-align: center;
+}
+
+h2 {
+  margin: 0;
+  background: yellow;
+}
+
+.boushoku {
+  padding: 32px;
+}
+
+.player-container {
+  margin-bottom: 30px;
+}
+
+.music-list {
+  list-style: none;
+  padding: 0 0 64px 0;
+}
+.music-list li {
+  background: rgba(245, 233, 233, 0.815);
+  margin: 10px auto;
+  padding: 12px 20px;
+  border-radius: 10px;
+  width: 250px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.music-list li:hover {
+  background-color: yellow;
+  transform: scale(1.05);
+}
+
+footer {
+  background: #35366d;
+  color: white;
+  padding: 32px 0;
+  text-align: center;
+  font-size: 10px;
+}
+
+small {
+  font-size: 14px;
+}

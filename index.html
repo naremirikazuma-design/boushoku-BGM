@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>なっきー作曲BGM</title>
+  <link rel="icon" href="トラ顔.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>
+      <img src="トラ顔.png" alt="logo" class="logo" width="54" heigth="54">
+    </h1>
+    <div class="game-link">
+      <p>ゲームはこちら→</p>
+      <a href="https://unityroom.com/games/boushoku_hero_odyssey" target="_blank" class="unityroom">暴食ヒーローオデッセイ</a>
+    </div>
+  </header>
+  
+  <section>
+    <h2>♪♪♪なっきー作曲のページ♪♪♪</h2>
+    <img src="icon_20251019_155044.png" alt="boushoku" class="boushoku" width="280" heigth="280">
+    <!-- <p>ゲーム「暴食ヒーローオデッセイ ～BGM集～」</p> -->
+
+  </section>
+
+
+
+  <div class="player-container">
+    <p>ゲーム「暴食ヒーローオデッセイ ～BGM集～」</p>
+    <audio id="audioPlayer" controls></audio>
+  </div>
+  <ul class="music-list">
+    <li data-file="01タイトルBGM３（採用）.mp3">🌞 始まりの朝</li>
+    <li data-file="02ステージBGM２ (採用).mp3">🔥 冒険のフィールド</li>
+    <li data-file="03ステージBGM１.mp3">🌸 暴食を楽しむ</li>
+    <li data-file="05ステージボスBGM１.mp3">🌊 海辺の午後</li>
+    <li data-file="06ステージボスBGM１ マイナー調.mp3">✨ 星空のセレナーデ</li>
+  </ul>
+    
+ 
+
+  <script>
+    const player = document.getElementById('audioPlayer');
+    const listItems = document.querySelectorAll('.music-list li');
+
+    listItems.forEach(item => {
+      item.addEventListener('click', () => {
+        const file = item.getAttribute('data-file');
+        player.src = file;
+        player.play();
+      });
+    });
+  </script>
+
+
+</body>
+
+  <footer>
+    <small>(c) Natsuki Fujiwara</small>
+    <p>「暴食ヒーローオデッセイ」はゲームジャム高梁2025にて制作したUnityゲームです</p>
+  </footer>
+
+</html>
